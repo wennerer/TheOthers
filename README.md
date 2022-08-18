@@ -1,5 +1,4 @@
-# TheOthers
-This is a package with components created for Lazarus
+# TheOthers - This is a package with components created for Lazarus
 The package currently contains:
 -TSelector, this component creates a rubberband and returns a bitmap. The component also has a predefined popup menu with several 
 functions like copy, cut, rotate, save, etc.
