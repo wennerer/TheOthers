@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <Version Value="12"/>
+    <BuildModes Active="Linux_64"/>
+    <Units Count="6">
+      <Unit0>
+        <Filename Value="project1.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="60"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="unit1.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Form1"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="Unit1"/>
+        <TopLine Value="27"/>
+        <CursorPos Y="52"/>
+        <UsageCount Value="60"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="../../selector.pas"/>
+        <UnitName Value="Selector"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="1645"/>
+        <CursorPos X="6" Y="1682"/>
+        <UsageCount Value="30"/>
+        <Loaded Value="True"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="../../../../../../../../Programme/Stable_12_20/lazarus/lcl/include/control.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="3532"/>
+        <CursorPos Y="3548"/>
+        <UsageCount Value="6"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="../../selectorstrconsts.pas"/>
+        <EditorIndex Value="2"/>
+        <CursorPos X="3" Y="11"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="../../../../../../../../Programme/Stable_01_22/lazarus/lcl/include/customform.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="907"/>
+        <CursorPos Y="922"/>
+        <UsageCount Value="10"/>
+      </Unit5>
+    </Units>
+    <JumpHistory Count="30" HistoryIndex="29">
+      <Position1>
+        <Filename Value="../../selector.pas"/>
+        <Caret Line="1908" TopLine="1905"/>
+      </Position1>
+      <Position2>
+        <Filename Value="../../selectorstrconsts.pas"/>
+        <Caret Line="11" Column="3"/>
+      </Position2>
+      <Position3>
+        <Filename Value="../../selector.pas"/>
+        <Caret Line="1908" TopLine="1902"/>
+      </Position3>
+      <Position4>
+        <Filename Value="../../selector.pas"/>
+        <Caret Line="1909" TopLine="1902"/>
+      </Position4>
+      <Position5>
+        <Filename Value="../../selector.pas"/>
+        <Caret Line="1910" TopLine="1902"/>
+      </Position5>
+      <Position6>
+        <Filename Value="../../selector.pas"/>
+        <Caret Line="1911" TopLine="1902"/>
+      </Position6>
+      <Position7>
+        <Filename Value="../../selector.pas"/>
+        <Caret Line="1912" TopLine="1902"/>
+      </Position7>
+      <Position8>
+        <Filename Value="../../selector.pas"/>
+        <Caret Line="1913" TopLine="1902"/>
+      </Position8>
+      <Position9>
+        <Filename Value="../../selector.pas"/>
+        <Caret Line="1914" TopLine="1902"/>
+      </Position9>
+      <Position10>
+        <Filename Value="../../selector.pas"/>
+        <Caret Line="1915" TopLine="1902"/>
+      </Position10>
+      <Position11>
+        <Filename Value="../../selector.pas"/>
+        <Caret Line="1916" TopLine="1902"/>
+      </Position11>
+      <Position12>
+        <Filename Value="../../selector.pas"/>
+        <Caret Line="1917" TopLine="1902"/>
+      </Position12>
+      <Position13>
+        <Filename Value="../../selector.pas"/>
+        <Caret Line="1918" TopLine="1902"/>
+      </Position13>
+      <Position14>
+        <Filename Value="../../selector.pas"/>
+        <Caret Line="1919" TopLine="1902"/>
+      </Position14>
+      <Position15>
+        <Filename Value="../../selector.pas"/>
+        <Caret Line="1920" TopLine="1902"/>
+      </Position15>
+      <Position16>
+        <Filename Value="../../selector.pas"/>
+        <Caret Line="1921" TopLine="1902"/>
+      </Position16>
+      <Position17>
+        <Filename Value="../../selector.pas"/>
+        <Caret Line="1922" TopLine="1902"/>
+      </Position17>
+      <Position18>
+        <Filename Value="../../selector.pas"/>
+        <Caret Line="1923" TopLine="1902"/>
+      </Position18>
+      <Position19>
+        <Filename Value="../../selector.pas"/>
+        <Caret Line="1924" TopLine="1902"/>
+      </Position19>
+      <Position20>
+        <Filename Value="../../selector.pas"/>
+        <Caret Line="1925" TopLine="1902"/>
+      </Position20>
+      <Position21>
+        <Filename Value="../../selector.pas"/>
+        <Caret Line="1926" TopLine="1902"/>
+      </Position21>
+      <Position22>
+        <Filename Value="../../selector.pas"/>
+        <Caret Line="1927" TopLine="1902"/>
+      </Position22>
+      <Position23>
+        <Filename Value="../../selector.pas"/>
+        <Caret Line="1928" TopLine="1903"/>
+      </Position23>
+      <Position24>
+        <Filename Value="../../selector.pas"/>
+        <Caret Line="1929" TopLine="1904"/>
+      </Position24>
+      <Position25>
+        <Filename Value="../../selector.pas"/>
+        <Caret Line="1930" TopLine="1905"/>
+      </Position25>
+      <Position26>
+        <Filename Value="../../selector.pas"/>
+        <Caret Line="1931" TopLine="1906"/>
+      </Position26>
+      <Position27>
+        <Filename Value="../../selector.pas"/>
+        <Caret Line="1932" TopLine="1908"/>
+      </Position27>
+      <Position28>
+        <Filename Value="../../selector.pas"/>
+        <Caret Line="1933" TopLine="1909"/>
+      </Position28>
+      <Position29>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="52" TopLine="27"/>
+      </Position29>
+      <Position30>
+        <Filename Value="../../selector.pas"/>
+        <Caret Line="225" Column="19" TopLine="200"/>
+      </Position30>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes ActiveMode=""/>
+    </RunParams>
+  </ProjectSession>
+</CONFIG>

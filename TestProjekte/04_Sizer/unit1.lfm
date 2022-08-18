@@ -1,0 +1,27 @@
+object Form1: TForm1
+  Left = 431
+  Height = 400
+  Top = 250
+  Width = 700
+  Caption = 'Mit Rechtsklick beenden'
+  ClientHeight = 400
+  ClientWidth = 700
+  OnPaint = FormPaint
+  LCLVersion = '2.2.0.4'
+  object Button1: TButton
+    Left = 19
+    Height = 25
+    Top = 19
+    Width = 75
+    Caption = 'Start Sizer'
+    OnClick = Button1Click
+    TabOrder = 0
+  end
+  object Sizer1: TSizer
+    Left = 272
+    Height = 0
+    Top = 9
+    Width = 35
+    OnFinished = Sizer1Finished
+  end
+end

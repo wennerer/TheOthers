@@ -1,0 +1,21 @@
+object Form1: TForm1
+  Left = 308
+  Height = 240
+  Top = 250
+  Width = 320
+  Caption = 'Form1'
+  ClientHeight = 240
+  ClientWidth = 320
+  OnClose = FormClose
+  OnCreate = FormCreate
+  object Selector1: TSelector
+    Left = 72
+    Top = 48
+    OnChange = Selector1Change
+    OnFinished = Selector1Finished
+    CuttingOut = False
+    CuttingColor = clForm
+    Transparent = True
+    PrecastPopup = pmShow
+  end
+end

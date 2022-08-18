@@ -1,0 +1,135 @@
+msgid ""
+msgstr "Content-Type: text/plain; charset=UTF-8"
+
+#: selector.test
+msgid "Test"
+msgstr ""
+
+#: selector.transtext0
+msgid "Kopieren"
+msgstr ""
+
+#: selector.transtext1
+msgid "Ausschneiden"
+msgstr ""
+
+#: selector.transtext10
+msgid "als transp. PNG speichern"
+msgstr ""
+
+#: selector.transtext11
+msgid "Abbrechen"
+msgstr ""
+
+#: selector.transtext12
+msgid "Fertigstellen"
+msgstr ""
+
+#: selector.transtext2
+msgid "Einfügen"
+msgstr ""
+
+#: selector.transtext21
+msgid "Einpassen"
+msgstr ""
+
+#: selector.transtext3
+msgid "Löschen"
+msgstr ""
+
+#: selector.transtext4
+msgid "Transparent"
+msgstr ""
+
+#: selector.transtext5
+msgid "Transparentefarbe setzen"
+msgstr ""
+
+#: selector.transtext51
+msgid "Transparentefarbe auswählen"
+msgstr ""
+
+#: selector.transtext52
+msgid "Transparentefarbe scannen"
+msgstr ""
+
+#: selector.transtext6
+msgid "Hintergrund löschen"
+msgstr ""
+
+#: selector.transtext7
+msgid "Auswahloptionen"
+msgstr ""
+
+#: selector.transtext71
+msgid "Alles Auswählen"
+msgstr ""
+
+#: selector.transtext72
+msgid "Rechteckige Auswahl"
+msgstr ""
+
+#: selector.transtext73
+msgid "Quadratische Auswahl"
+msgstr ""
+
+#: selector.transtext74
+msgid "Formfreie Auswahl"
+msgstr ""
+
+#: selector.transtext8
+msgid "Drehen"
+msgstr ""
+
+#: selector.transtext81
+msgid "Rechts Drehen"
+msgstr ""
+
+#: selector.transtext82
+msgid "Links Drehen"
+msgstr ""
+
+#: selector.transtext83
+msgid "um 180° Drehen"
+msgstr ""
+
+#: selector.transtext84
+msgid "Horizontal Spiegeln"
+msgstr ""
+
+#: selector.transtext85
+msgid "Vertikal Spiegeln"
+msgstr ""
+
+#: selector.transtext9
+msgid "Größe ändern"
+msgstr ""
+
+#: selector.transtext91
+msgid "Aktuelle Größe (B/H): "
+msgstr ""
+
+#: selector.transtext92
+msgid "Neue Größe eingeben: "
+msgstr ""
+
+#: selector.transtext93
+msgid "Breite: "
+msgstr ""
+
+#: selector.transtext94
+msgid "Höhe: "
+msgstr ""
+
+#: selector.transtext95
+msgid "Seitenverhältnis beibehalten"
+msgstr ""
+
+#: selector.transtext96
+msgid "Bitte wählen: "
+msgstr ""
+
+#: selector.transtext97
+msgid "Zuschneiden"
+msgstr ""
+

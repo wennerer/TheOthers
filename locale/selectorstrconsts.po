@@ -1,0 +1,131 @@
+msgid ""
+msgstr "Content-Type: text/plain; charset=UTF-8"
+
+#: selectorstrconsts.transtext0
+msgid "Kopieren"
+msgstr ""
+
+#: selectorstrconsts.transtext1
+msgid "Ausschneiden"
+msgstr ""
+
+#: selectorstrconsts.transtext10
+msgid "als transp. PNG speichern"
+msgstr ""
+
+#: selectorstrconsts.transtext11
+msgid "Abbrechen"
+msgstr ""
+
+#: selectorstrconsts.transtext12
+msgid "Fertigstellen"
+msgstr ""
+
+#: selectorstrconsts.transtext2
+msgid "Einfügen"
+msgstr ""
+
+#: selectorstrconsts.transtext21
+msgid "Einpassen"
+msgstr ""
+
+#: selectorstrconsts.transtext3
+msgid "Löschen"
+msgstr ""
+
+#: selectorstrconsts.transtext4
+msgid "Transparent"
+msgstr ""
+
+#: selectorstrconsts.transtext5
+msgid "Transparentefarbe setzen"
+msgstr ""
+
+#: selectorstrconsts.transtext51
+msgid "Transparentefarbe auswählen"
+msgstr ""
+
+#: selectorstrconsts.transtext52
+msgid "Transparentefarbe scannen"
+msgstr ""
+
+#: selectorstrconsts.transtext6
+msgid "Hintergrund löschen"
+msgstr ""
+
+#: selectorstrconsts.transtext7
+msgid "Auswahloptionen"
+msgstr ""
+
+#: selectorstrconsts.transtext71
+msgid "Alles Auswählen"
+msgstr ""
+
+#: selectorstrconsts.transtext72
+msgid "Rechteckige Auswahl"
+msgstr ""
+
+#: selectorstrconsts.transtext73
+msgid "Quadratische Auswahl"
+msgstr ""
+
+#: selectorstrconsts.transtext74
+msgid "Formfreie Auswahl"
+msgstr ""
+
+#: selectorstrconsts.transtext8
+msgid "Drehen"
+msgstr ""
+
+#: selectorstrconsts.transtext81
+msgid "Rechts Drehen"
+msgstr ""
+
+#: selectorstrconsts.transtext82
+msgid "Links Drehen"
+msgstr ""
+
+#: selectorstrconsts.transtext83
+msgid "um 180° Drehen"
+msgstr ""
+
+#: selectorstrconsts.transtext84
+msgid "Horizontal Spiegeln"
+msgstr ""
+
+#: selectorstrconsts.transtext85
+msgid "Vertikal Spiegeln"
+msgstr ""
+
+#: selectorstrconsts.transtext9
+msgid "Größe ändern"
+msgstr ""
+
+#: selectorstrconsts.transtext91
+msgid "Aktuelle Größe (B/H): "
+msgstr ""
+
+#: selectorstrconsts.transtext92
+msgid "Neue Größe eingeben: "
+msgstr ""
+
+#: selectorstrconsts.transtext93
+msgid "Breite: "
+msgstr ""
+
+#: selectorstrconsts.transtext94
+msgid "Höhe: "
+msgstr ""
+
+#: selectorstrconsts.transtext95
+msgid "Seitenverhältnis beibehalten"
+msgstr ""
+
+#: selectorstrconsts.transtext96
+msgid "Bitte wählen: "
+msgstr ""
+
+#: selectorstrconsts.transtext97
+msgid "Zuschneiden"
+msgstr ""
+

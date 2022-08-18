@@ -1,0 +1,142 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Project-Id-Version: Selector\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: Bernd\n"
+"MIME-Version: 1.0\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"X-Generator: Poedit 2.3\n"
+
+#: selectorstrconsts.transtext0
+msgid "Kopieren"
+msgstr "Copy"
+
+#: selectorstrconsts.transtext1
+msgid "Ausschneiden"
+msgstr "Cut"
+
+#: selectorstrconsts.transtext10
+msgid "als transp. PNG speichern"
+msgstr "Save as transp. PNG"
+
+#: selectorstrconsts.transtext11
+msgid "Abbrechen"
+msgstr "Abort"
+
+#: selectorstrconsts.transtext12
+msgid "Fertigstellen"
+msgstr "Complete"
+
+#: selectorstrconsts.transtext2
+msgid "Einfügen"
+msgstr "Paste"
+
+#: selectorstrconsts.transtext21
+msgid "Einpassen"
+msgstr "Fit in"
+
+#: selectorstrconsts.transtext3
+msgid "Löschen"
+msgstr "Clear"
+
+#: selectorstrconsts.transtext4
+msgid "Transparent"
+msgstr "Transparent"
+
+#: selectorstrconsts.transtext5
+msgid "Transparentefarbe setzen"
+msgstr "Set transparency color"
+
+#: selectorstrconsts.transtext51
+msgid "Transparentefarbe auswählen"
+msgstr "Select transparent color"
+
+#: selectorstrconsts.transtext52
+msgid "Transparentefarbe scannen"
+msgstr "Scan transparent color"
+
+#: selectorstrconsts.transtext6
+msgid "Hintergrund löschen"
+msgstr "Erase background"
+
+#: selectorstrconsts.transtext7
+msgid "Auswahloptionen"
+msgstr "Selection options"
+
+#: selectorstrconsts.transtext71
+msgid "Alles Auswählen"
+msgstr "Select all"
+
+#: selectorstrconsts.transtext72
+msgid "Rechteckige Auswahl"
+msgstr "Rectangular selection"
+
+#: selectorstrconsts.transtext73
+msgid "Quadratische Auswahl"
+msgstr "Square selection"
+
+#: selectorstrconsts.transtext74
+msgid "Formfreie Auswahl"
+msgstr "Form-free selection"
+
+#: selectorstrconsts.transtext8
+msgid "Drehen"
+msgstr "Rotate"
+
+#: selectorstrconsts.transtext81
+msgid "Rechts Drehen"
+msgstr "Rotate Right"
+
+#: selectorstrconsts.transtext82
+msgid "Links Drehen"
+msgstr "Rotate Left"
+
+#: selectorstrconsts.transtext83
+msgid "um 180° Drehen"
+msgstr "Rotate by 180 °"
+
+#: selectorstrconsts.transtext84
+msgid "Horizontal Spiegeln"
+msgstr "Flip horizontally"
+
+#: selectorstrconsts.transtext85
+msgid "Vertikal Spiegeln"
+msgstr "Flip vertically"
+
+#: selectorstrconsts.transtext9
+msgid "Größe ändern"
+msgstr "Change Size"
+
+#: selectorstrconsts.transtext91
+msgid "Aktuelle Größe (B/H): "
+msgstr "Current size (W /H):"
+
+#: selectorstrconsts.transtext92
+msgid "Neue Größe eingeben: "
+msgstr "Enter New Size:"
+
+#: selectorstrconsts.transtext93
+msgid "Breite: "
+msgstr "Width:"
+
+#: selectorstrconsts.transtext94
+msgid "Höhe: "
+msgstr "Height:"
+
+#: selectorstrconsts.transtext95
+msgid "Seitenverhältnis beibehalten"
+msgstr "Maintain Aspect Ratio"
+
+#: selectorstrconsts.transtext96
+msgid "Bitte wählen: "
+msgstr "Please choose:"
+
+#: selectorstrconsts.transtext97
+msgid "Zuschneiden"
+msgstr "Cropping"
+

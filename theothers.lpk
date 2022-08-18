@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <Package Version="5">
+    <Name Value="TheOthers"/>
+    <Type Value="RunAndDesignTime"/>
+    <CompilerOptions>
+      <Version Value="11"/>
+      <SearchPaths>
+        <UnitOutputDirectory Value="lib/$(TargetCPU)-$(TargetOS)"/>
+      </SearchPaths>
+    </CompilerOptions>
+    <Version Release="1" Build="1"/>
+    <Files>
+      <Item>
+        <Filename Value="selector.pas"/>
+        <HasRegisterProc Value="True"/>
+        <UnitName Value="Selector"/>
+      </Item>
+      <Item>
+        <Filename Value="customline.pas"/>
+        <UnitName Value="CustomLine"/>
+      </Item>
+      <Item>
+        <Filename Value="selectorstrconsts.pas"/>
+        <UnitName Value="selectorstrconsts"/>
+      </Item>
+      <Item>
+        <Filename Value="simplegraphics.pas"/>
+        <UnitName Value="SimpleGraphics"/>
+      </Item>
+      <Item>
+        <Filename Value="sizer.pas"/>
+        <HasRegisterProc Value="True"/>
+        <UnitName Value="Sizer"/>
+      </Item>
+    </Files>
+    <RequiredPkgs>
+      <Item>
+        <PackageName Value="LCL"/>
+      </Item>
+      <Item>
+        <PackageName Value="FCL"/>
+      </Item>
+    </RequiredPkgs>
+    <UsageOptions>
+      <UnitPath Value="$(PkgOutDir)"/>
+    </UsageOptions>
+    <PublishOptions>
+      <Version Value="2"/>
+      <UseFileFilters Value="True"/>
+    </PublishOptions>
+  </Package>
+</CONFIG>
