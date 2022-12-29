@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <Version Value="12"/>
+    <BuildModes Active="Linux_64_Default"/>
+    <Units>
+      <Unit>
+        <Filename Value="project1.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="45"/>
+      </Unit>
+      <Unit>
+        <Filename Value="unit1.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Form1"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="Unit1"/>
+        <TopLine Value="19"/>
+        <CursorPos X="3" Y="41"/>
+        <UsageCount Value="45"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="../../Meine_Packages/Others/layer.pas"/>
+        <UnitName Value="Layer"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="4"/>
+        <CursorPos X="31" Y="3"/>
+        <UsageCount Value="23"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="../../Meine_Packages/Others/sizer.pas"/>
+        <UnitName Value="Sizer"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="18"/>
+        <CursorPos X="17" Y="28"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="../../Meine_Packages/Multi/Multis/multipanel.pas"/>
+        <UnitName Value="MultiPanel"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="291"/>
+        <CursorPos X="31" Y="304"/>
+        <UsageCount Value="8"/>
+      </Unit>
+      <Unit>
+        <Filename Value="../../../../../Programme/Stable_01_22/lazarus/lcl/extctrls.pp"/>
+        <UnitName Value="ExtCtrls"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="1075"/>
+        <CursorPos X="19" Y="1093"/>
+        <UsageCount Value="21"/>
+      </Unit>
+      <Unit>
+        <Filename Value="../../../../../Programme/Stable_01_22/lazarus/lcl/controls.pp"/>
+        <UnitName Value="Controls"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="1278"/>
+        <CursorPos X="42" Y="1290"/>
+        <UsageCount Value="9"/>
+      </Unit>
+      <Unit>
+        <Filename Value="../../../../../Programme/Stable_01_22/lazarus/lcl/include/custompanel.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="21"/>
+        <CursorPos X="3" Y="26"/>
+        <UsageCount Value="21"/>
+      </Unit>
+      <Unit>
+        <Filename Value="../../../../../Programme/Stable_01_22/lazarus/lcl/include/notebook.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="56"/>
+        <CursorPos X="22" Y="47"/>
+        <UsageCount Value="9"/>
+      </Unit>
+      <Unit>
+        <Filename Value="../../../../../Programme/Stable_01_22/lazarus/lcl/include/control.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="2975"/>
+        <CursorPos X="3" Y="2989"/>
+        <UsageCount Value="9"/>
+      </Unit>
+      <Unit>
+        <Filename Value="../../../../../Programme/Stable_01_22/lazarus/lcl/include/page.inc"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="15" Y="43"/>
+        <UsageCount Value="8"/>
+      </Unit>
+    </Units>
+    <JumpHistory HistoryIndex="29">
+      <Position>
+        <Filename Value="../../Meine_Packages/Others/layer.pas"/>
+        <Caret Line="24" Column="16" TopLine="16"/>
+      </Position>
+      <Position>
+        <Filename Value="../../Meine_Packages/Others/layer.pas"/>
+        <Caret Line="49" Column="71" TopLine="36"/>
+      </Position>
+      <Position>
+        <Filename Value="../../Meine_Packages/Others/layer.pas"/>
+        <Caret Line="42" TopLine="30"/>
+      </Position>
+      <Position>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="21" Column="28"/>
+      </Position>
+      <Position>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="20" Column="28"/>
+      </Position>
+      <Position>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="21" Column="28"/>
+      </Position>
+      <Position>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="20" Column="28"/>
+      </Position>
+      <Position>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="22" Column="28"/>
+      </Position>
+      <Position>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="27" Column="28" TopLine="16"/>
+      </Position>
+      <Position>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="26" Column="28" TopLine="16"/>
+      </Position>
+      <Position>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="27" Column="28" TopLine="16"/>
+      </Position>
+      <Position>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="28" Column="28" TopLine="16"/>
+      </Position>
+      <Position>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="27" Column="28" TopLine="16"/>
+      </Position>
+      <Position>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="28" Column="28" TopLine="16"/>
+      </Position>
+      <Position>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="27" Column="28" TopLine="16"/>
+      </Position>
+      <Position>
+        <Filename Value="../../Meine_Packages/Others/layer.pas"/>
+        <Caret Line="49" Column="70" TopLine="15"/>
+      </Position>
+      <Position>
+        <Filename Value="../../Meine_Packages/Others/layer.pas"/>
+        <Caret Line="18" Column="19" TopLine="16"/>
+      </Position>
+      <Position>
+        <Filename Value="../../Meine_Packages/Others/layer.pas"/>
+        <Caret Line="44" Column="61" TopLine="40"/>
+      </Position>
+      <Position>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="36" Column="3" TopLine="16"/>
+      </Position>
+      <Position>
+        <Filename Value="../../Meine_Packages/Others/layer.pas"/>
+        <Caret Line="61" Column="21" TopLine="40"/>
+      </Position>
+      <Position>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="37" Column="3" TopLine="17"/>
+      </Position>
+      <Position>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="36" Column="3" TopLine="17"/>
+      </Position>
+      <Position>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="35" Column="3" TopLine="16"/>
+      </Position>
+      <Position>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="34" Column="3" TopLine="16"/>
+      </Position>
+      <Position>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="35" Column="3" TopLine="16"/>
+      </Position>
+      <Position>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="36" Column="3" TopLine="16"/>
+      </Position>
+      <Position>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="37" Column="3" TopLine="16"/>
+      </Position>
+      <Position>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="38" Column="3" TopLine="16"/>
+      </Position>
+      <Position>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="39" Column="3" TopLine="17"/>
+      </Position>
+      <Position>
+        <Filename Value="unit1.pas"/>
+        <Caret Line="40" Column="3" TopLine="18"/>
+      </Position>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes ActiveMode=""/>
+    </RunParams>
+  </ProjectSession>
+</CONFIG>

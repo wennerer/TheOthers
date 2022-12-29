@@ -8,7 +8,7 @@ unit TheOthers;
 interface
 
 uses
-  Selector, CustomLine, selectorstrconsts, SimpleGraphics, Sizer, 
+  Selector, CustomLine, selectorstrconsts, SimpleGraphics, Sizer, Layer, 
   LazarusPackageIntf;
 
 implementation
@@ -17,6 +17,7 @@ procedure Register;
 begin
   RegisterUnit('Selector', @Selector.Register);
   RegisterUnit('Sizer', @Sizer.Register);
+  RegisterUnit('Layer', @Layer.Register);
 end;
 
 initialization
