@@ -10,7 +10,7 @@
         <UnitOutputDirectory Value="lib/$(TargetCPU)-$(TargetOS)"/>
       </SearchPaths>
     </CompilerOptions>
-    <Version Release="1" Build="2"/>
+    <Version Release="1" Build="3"/>
     <Files>
       <Item>
         <Filename Value="selector.pas"/>
