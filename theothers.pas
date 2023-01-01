@@ -9,7 +9,7 @@ interface
 
 uses
   Selector, CustomLine, selectorstrconsts, SimpleGraphics, Sizer, Layer, 
-  LazarusPackageIntf;
+  TextBox, LazarusPackageIntf;
 
 implementation
 
@@ -18,6 +18,7 @@ begin
   RegisterUnit('Selector', @Selector.Register);
   RegisterUnit('Sizer', @Sizer.Register);
   RegisterUnit('Layer', @Layer.Register);
+  RegisterUnit('TextBox', @TextBox.Register);
 end;
 
 initialization

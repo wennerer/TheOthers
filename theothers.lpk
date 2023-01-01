@@ -39,6 +39,11 @@
         <HasRegisterProc Value="True"/>
         <UnitName Value="Layer"/>
       </Item>
+      <Item>
+        <Filename Value="textbox.pas"/>
+        <HasRegisterProc Value="True"/>
+        <UnitName Value="TextBox"/>
+      </Item>
     </Files>
     <RequiredPkgs>
       <Item>
