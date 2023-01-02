@@ -1,6 +1,6 @@
 { <This component can be used to output a text>
 
-  Copyright (C) <Version 1.0.0.1 01.01.2023> <Bernd Hübner>
+  Copyright (C) <Version 1.0.0.2 01.01.2023> <Bernd Hübner>
 
   This library is free software; you can redistribute it and/or modify it under the
   terms of the GNU Library General Public License as published by the Free Software
@@ -98,6 +98,10 @@ type
    //The color of the background (clNone = transparent)
    //Die Farbe des Hintergrundes (clNone = Transparent)
    property BgrdColor : TColor read FBgrdColor write SetBgrdColor default clNone;
+
+   property Anchors;
+   property BorderSpacing;
+   property Constraints;
   end;
 
 procedure Register;
@@ -153,12 +157,14 @@ begin
  if fTextStyle.Alignment=AValue then exit;
  fTextStyle.Alignment:=AValue;
  if aValue <> taLeftJustify then FCapLeft:=0;
+ Invalidate;
 end;
 
 procedure TTextBox.SetBgrdColor(AValue: TColor);
 begin
   if FBgrdColor=AValue then Exit;
   FBgrdColor:=AValue;
+  Invalidate;
 end;
 
 procedure TTextBox.SetCapLeft(AValue: integer);
@@ -177,6 +183,7 @@ begin
   FCaption:=AValue;
   CaptionChange:=true;
   if FAutoSize then TriggerAutoSize;
+  Invalidate;
 end;
 
 procedure TTextBox.SetCaptionWordbreak(AValue: boolean);
@@ -200,6 +207,7 @@ procedure TTextBox.SetCapTop(AValue: integer);
 begin
   if FCapTop=AValue then Exit;
   FCapTop:=AValue;
+  Invalidate;
 end;
 
 procedure TTextBox.SetLayout(AValue: TTextLayout);
@@ -208,6 +216,7 @@ begin
  fTextStyle.Layout:=AValue;
  if aValue <> tlTop then FCapTop:=0;
  if FAutoSize then TriggerAutoSize;
+ Invalidate;
 end;
 
 procedure TTextBox.SetTextStyle(AValue: TTextStyle);
