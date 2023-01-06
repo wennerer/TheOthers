@@ -36,7 +36,7 @@ interface
 
 uses
   Classes, SysUtils, LResources, Forms, Controls, Graphics, Dialogs, ExtCtrls,
-  LCLProc;
+  LCLProc, LMessages;
 
 type
 
@@ -44,14 +44,20 @@ type
 
   TLayer = class(TCustomControl)
   private
+    FGroupIndex: integer;
+    procedure SetGroupIndex(AValue: integer);
 
   protected
    procedure SetVisible(Value: Boolean);override;
+   procedure CheckTheGroup;
+   procedure CheckParent;
   public
    constructor Create(AOwner: TComponent); override;
    destructor Destroy; override;
 
   published
+   property GroupIndex : integer read FGroupIndex write SetGroupIndex default 0;
+
    property Width;
    property Height;
    property Visible;
@@ -70,16 +76,40 @@ procedure Register;
 begin
   {$I layer_icon.lrs}
   RegisterComponents('Others',[TLayer]);
+
 end;
 
 { TLayer }
 
+procedure TLayer.SetGroupIndex(AValue: integer);
+begin
+  if FGRoupIndex=AValue then Exit;
+  FGRoupIndex:=AValue;
+end;
+
 procedure TLayer.SetVisible(Value: Boolean);
 begin
-
+  if Value then CheckTheGroup;
   if Value then ControlStyle := ControlStyle + [csAcceptsControls]-[csNoDesignVisible] else
    ControlStyle := ControlStyle + [csAcceptsControls,csNoDesignVisible];
   inherited SetVisible(Value);
+end;
+
+procedure TLayer.CheckTheGroup;
+var lv : integer;
+begin
+
+  for lv :=  0 to pred(Parent.ControlCount) do
+   if (Parent.Controls[lv] <> self) then
+   if (Parent.Controls[lv] is TLayer) then
+    if TLayer(Parent.Controls[lv]).FGroupIndex = FGroupIndex then
+     TLayer(Parent.Controls[lv]).Visible:= false;
+end;
+
+procedure TLayer.CheckParent;
+begin
+  showmessage('check');
+ if Parent is TLayer then showmessage('layer');
 end;
 
 constructor TLayer.Create(AOwner: TComponent);
@@ -89,12 +119,17 @@ begin
   Height:= 30;
   ControlStyle := ControlStyle + [csAcceptsControls];
   Align := alClient;
+  FGRoupIndex := 0;
+
 end;
 
 destructor TLayer.Destroy;
 begin
   inherited Destroy;
+
 end;
+
+
 
 
 
