@@ -1,6 +1,6 @@
 { <This component provides a page that can also be made invisible at design time.>
 
-  Copyright (C) <Version 1.0.1.0 06.01.2023> <Bernd Hübner>
+  Copyright (C) <Version 1.0.1.1 06.01.2023> <Bernd Hübner>
 
   This library is free software; you can redistribute it and/or modify it under the
   terms of the GNU Library General Public License as published by the Free Software
@@ -57,7 +57,7 @@ type
   public
    constructor Create(AOwner: TComponent); override;
    destructor Destroy; override;
-
+   procedure Paint; override;
   published
    property GroupIndex : integer read FGroupIndex write SetGroupIndex default 0;
 
@@ -220,6 +220,18 @@ destructor TLayer.Destroy;
 begin
   inherited Destroy;
 
+end;
+
+procedure TLayer.Paint;
+begin
+  inherited Paint;
+  {$IFDEF WINDOWS}
+  if (csDesigning in Componentstate) then
+   begin
+    canvas.Brush.Color:=Color;
+    canvas.FillRect(0,0,width,height);
+   end;
+  {$ENDIF}
 end;
 
 
