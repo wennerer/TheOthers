@@ -1,73 +1,156 @@
 object Form1: TForm1
-  Left = 457
-  Height = 421
+  Left = 449
+  Height = 292
   Top = 250
-  Width = 604
-  Caption = 'Form1'
-  ClientHeight = 421
-  ClientWidth = 604
+  Width = 837
+  Caption = 'Test the TLayer'
+  ClientHeight = 292
+  ClientWidth = 837
   object Panel1: TPanel
-    Left = 0
-    Height = 96
-    Top = 0
-    Width = 604
-    Align = alTop
+    Left = 16
+    Height = 186
+    Top = 16
+    Width = 240
     Caption = 'Panel1'
-    ClientHeight = 96
-    ClientWidth = 604
+    ClientHeight = 186
+    ClientWidth = 240
     TabOrder = 0
     object Layer1: TLayer
       Left = 1
-      Height = 94
+      Height = 184
       Top = 1
-      Width = 602
+      Width = 238
+      Color = clLime
       Align = alClient
       object Button1: TButton
-        Left = 8
-        Height = 64
-        Top = 8
+        Left = 72
+        Height = 25
+        Top = 72
         Width = 75
         Caption = 'Button1'
-        Font.Color = clRed
-        ParentFont = False
+        OnClick = ButtonsClick
         TabOrder = 0
-      end
-      object Button2: TButton
-        Left = 96
-        Height = 64
-        Top = 8
-        Width = 75
-        Caption = 'Button2'
-        Font.Color = clRed
-        ParentFont = False
-        TabOrder = 1
       end
     end
-    object Layer2: TLayer
+    object Layer4: TLayer
       Left = 1
-      Height = 94
+      Height = 184
       Top = 1
-      Width = 602
+      Width = 238
+      HelpContext = 1
+      Visible = False
+      Color = clRed
       Align = alClient
-      object Edit1: TEdit
-        Left = 38
-        Height = 27
-        Top = 27
-        Width = 162
+      object Button4: TButton
+        Left = 72
+        Height = 25
+        Top = 72
+        Width = 75
+        Caption = 'Button4'
+        OnClick = ButtonsClick
         TabOrder = 0
-        Text = 'Edit1'
       end
     end
   end
-  object StaticText1: TStaticText
-    Left = 132
-    Height = 39
-    Top = 149
-    Width = 261
-    AutoSize = True
-    Caption = 'Click Layer Visible'
-    Font.Height = 32
-    ParentFont = False
+  object Panel2: TPanel
+    Left = 288
+    Height = 186
+    Top = 16
+    Width = 240
+    Caption = 'Panel2'
+    ClientHeight = 186
+    ClientWidth = 240
     TabOrder = 1
+    object Layer2: TLayer
+      Left = 1
+      Height = 184
+      Top = 1
+      Width = 238
+      Color = clLime
+      Align = alClient
+      object Button2: TButton
+        Left = 80
+        Height = 25
+        Top = 72
+        Width = 75
+        Caption = 'Button2'
+        OnClick = ButtonsClick
+        TabOrder = 0
+      end
+    end
+    object Layer5: TLayer
+      Left = 1
+      Height = 184
+      Top = 1
+      Width = 238
+      Visible = False
+      Color = clRed
+      Align = alClient
+      object Button5: TButton
+        Left = 80
+        Height = 25
+        Top = 72
+        Width = 75
+        Caption = 'Button5'
+        OnClick = ButtonsClick
+        TabOrder = 0
+      end
+    end
+  end
+  object Panel3: TPanel
+    Left = 568
+    Height = 186
+    Top = 16
+    Width = 240
+    Caption = 'Panel3'
+    ClientHeight = 186
+    ClientWidth = 240
+    TabOrder = 2
+    object Layer6: TLayer
+      Left = 1
+      Height = 184
+      Top = 1
+      Width = 238
+      Color = clLime
+      Align = alClient
+      object Button3: TButton
+        Left = 80
+        Height = 25
+        Top = 72
+        Width = 75
+        Caption = 'Button3'
+        OnClick = ButtonsClick
+        TabOrder = 0
+      end
+    end
+    object Layer3: TLayer
+      Left = 1
+      Height = 184
+      Top = 1
+      Width = 238
+      Visible = False
+      Color = clRed
+      Align = alClient
+      object Button6: TButton
+        Left = 72
+        Height = 25
+        Top = 72
+        Width = 75
+        Caption = 'Button6'
+        OnClick = ButtonsClick
+        TabOrder = 0
+      end
+    end
+  end
+  object Memo1: TMemo
+    Left = 16
+    Height = 33
+    Top = 224
+    Width = 792
+    Lines.Strings = (
+      'To change the layer on design time, double-click on, for example, Layer4:TLayer in the TreeView of the Object Inspector.'
+      'To change the layer on runtime click the buttons.'
+    )
+    TabOrder = 3
   end
 end

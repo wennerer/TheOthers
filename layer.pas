@@ -1,6 +1,6 @@
 { <This component provides a page that can also be made invisible at design time.>
 
-  Copyright (C) <Version 1.0.0.1 29.12.2022> <Bernd Hübner>
+  Copyright (C) <Version 1.0.1.0 06.01.2023> <Bernd Hübner>
 
   This library is free software; you can redistribute it and/or modify it under the
   terms of the GNU Library General Public License as published by the Free Software
@@ -36,7 +36,7 @@ interface
 
 uses
   Classes, SysUtils, LResources, Forms, Controls, Graphics, Dialogs, ExtCtrls,
-  LCLProc, LMessages;
+  LCLProc, LMessages, ComponentEditors, PropEdits;
 
 type
 
@@ -45,12 +45,15 @@ type
   TLayer = class(TCustomControl)
   private
     FGroupIndex: integer;
+
     procedure SetGroupIndex(AValue: integer);
 
   protected
    procedure SetVisible(Value: Boolean);override;
+   procedure SetToVisible;
    procedure CheckTheGroup;
    procedure CheckParent;
+   procedure WMShowWindow(var Message: TLMShowWindow); message LM_SHOWWINDOW;
   public
    constructor Create(AOwner: TComponent); override;
    destructor Destroy; override;
@@ -72,12 +75,73 @@ procedure Register;
 
 implementation
 
+
+type
+ { TSwitchLayerComponent }
+
+  TSwitchLayerComponent = class (TComponentEditor)
+  private
+   FOwner : TComponent;
+  protected
+
+  public
+   constructor Create(AComponent: TComponent;ADesigner: TComponentEditorDesigner); override;
+   procedure Edit; Override;
+   function GetVerbCount: Integer; override;
+   function GetVerb(Index: Integer): string; override;
+   procedure ExecuteVerb(Index: Integer); override;
+
+  end;
+
 procedure Register;
 begin
   {$I layer_icon.lrs}
   RegisterComponents('Others',[TLayer]);
-
+  RegisterComponentEditor(TLayer,TSwitchLayerComponent);
 end;
+
+constructor TSwitchLayerComponent.Create(AComponent: TComponent;
+  ADesigner: TComponentEditorDesigner);
+begin
+  inherited Create(AComponent, ADesigner);
+  FOwner := AComponent;
+end;
+
+procedure TSwitchLayerComponent.Edit;
+begin
+  //inherited Edit;
+ (FOwner as TLayer).SetToVisible;
+end;
+
+function TSwitchLayerComponent.GetVerbCount: Integer;
+begin
+  //Result:=inherited GetVerbCount;
+ result := 2;
+end;
+
+function TSwitchLayerComponent.GetVerb(Index: Integer): string;
+begin
+  //Result:=inherited GetVerb(Index);
+ case Index of
+  0: Result := 'Set this Layer to visible';
+  1: Result := 'Info';
+
+ end;
+end;
+
+procedure TSwitchLayerComponent.ExecuteVerb(Index: Integer);
+begin
+ // inherited ExecuteVerb(Index);
+ case Index of
+    0: Edit;
+    1: MessageDlg ('This component provides a page'#13 +
+      'that can also be made invisible'#13 +
+      'at design time!', mtInformation, [mbOK], 0);
+ end;
+end;
+
+//XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX---TLayer---xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
 
 { TLayer }
 
@@ -92,7 +156,14 @@ begin
   if Value then CheckTheGroup;
   if Value then ControlStyle := ControlStyle + [csAcceptsControls]-[csNoDesignVisible] else
    ControlStyle := ControlStyle + [csAcceptsControls,csNoDesignVisible];
+
   inherited SetVisible(Value);
+end;
+
+procedure TLayer.SetToVisible;
+begin
+ Visible:= true;
+ self.SetFocus;
 end;
 
 procedure TLayer.CheckTheGroup;
@@ -107,9 +178,31 @@ begin
 end;
 
 procedure TLayer.CheckParent;
+var exitflag : boolean;
+    CurControl  : TWinControl;
+    i : integer;
 begin
-  showmessage('check');
- if Parent is TLayer then showmessage('layer');
+ if Parent is TLayer then
+  begin
+   CurControl := Parent;
+   i:=0;
+   repeat
+    if CurControl is TLayer then
+     begin
+      exitflag := false;
+      CurControl := CurControl.Parent;
+     end
+    else
+     exitflag := true;
+    inc(i);
+   until (i>100) or (exitflag =true) ;
+   if (CurControl is TWinControl) then Parent := CurControl;
+  end;
+end;
+
+procedure TLayer.WMShowWindow(var Message: TLMShowWindow);
+begin
+  if (csDesigning in Componentstate) then CheckParent;
 end;
 
 constructor TLayer.Create(AOwner: TComponent);
@@ -128,6 +221,7 @@ begin
   inherited Destroy;
 
 end;
+
 
 
 
