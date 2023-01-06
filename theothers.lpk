@@ -11,50 +11,51 @@
       </SearchPaths>
     </CompilerOptions>
     <Version Release="1" Build="3"/>
-    <Files>
-      <Item>
+    <Files Count="7">
+      <Item1>
         <Filename Value="selector.pas"/>
         <HasRegisterProc Value="True"/>
         <UnitName Value="Selector"/>
-      </Item>
-      <Item>
+      </Item1>
+      <Item2>
         <Filename Value="customline.pas"/>
         <UnitName Value="CustomLine"/>
-      </Item>
-      <Item>
+      </Item2>
+      <Item3>
         <Filename Value="selectorstrconsts.pas"/>
         <UnitName Value="selectorstrconsts"/>
-      </Item>
-      <Item>
+      </Item3>
+      <Item4>
         <Filename Value="simplegraphics.pas"/>
         <UnitName Value="SimpleGraphics"/>
-      </Item>
-      <Item>
+      </Item4>
+      <Item5>
         <Filename Value="sizer.pas"/>
         <HasRegisterProc Value="True"/>
         <UnitName Value="Sizer"/>
-      </Item>
-      <Item>
+      </Item5>
+      <Item6>
         <Filename Value="layer.pas"/>
         <HasRegisterProc Value="True"/>
         <UnitName Value="Layer"/>
-      </Item>
-      <Item>
+      </Item6>
+      <Item7>
         <Filename Value="textbox.pas"/>
         <HasRegisterProc Value="True"/>
         <UnitName Value="TextBox"/>
-      </Item>
+      </Item7>
     </Files>
-    <RequiredPkgs>
-      <Item>
+    <CompatibilityMode Value="True"/>
+    <RequiredPkgs Count="3">
+      <Item1>
         <PackageName Value="IDEIntf"/>
-      </Item>
-      <Item>
+      </Item1>
+      <Item2>
         <PackageName Value="LCL"/>
-      </Item>
-      <Item>
+      </Item2>
+      <Item3>
         <PackageName Value="FCL"/>
-      </Item>
+      </Item3>
     </RequiredPkgs>
     <UsageOptions>
       <UnitPath Value="$(PkgOutDir)"/>
