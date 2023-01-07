@@ -1,6 +1,6 @@
 { <This component provides a page that can also be made invisible at design time.>
 
-  Copyright (C) <Version 1.0.1.1 06.01.2023> <Bernd Hübner>
+  Copyright (C) <Version 1.0.1.2 07.01.2023> <Bernd Hübner>
 
   This library is free software; you can redistribute it and/or modify it under the
   terms of the GNU Library General Public License as published by the Free Software
@@ -65,7 +65,7 @@ type
    property Height;
    property Visible;
    property Color;
-   property Align;
+   property Align default alClient;
    property Anchors;
    property BorderSpacing;
    property Constraints;

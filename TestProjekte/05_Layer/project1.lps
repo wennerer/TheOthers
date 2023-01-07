@@ -221,7 +221,8 @@
         <UnitName Value="Layer"/>
         <IsVisibleTab Value="True"/>
         <EditorIndex Value="1"/>
-        <CursorPos X="33" Y="3"/>
+        <TopLine Value="178"/>
+        <CursorPos X="36" Y="3"/>
         <UsageCount Value="10"/>
         <Loaded Value="True"/>
       </Unit26>
@@ -313,10 +314,11 @@
       </Position19>
       <Position20>
         <Filename Value="../../layer.pas"/>
+        <Caret Line="3" Column="33"/>
       </Position20>
       <Position21>
         <Filename Value="../../layer.pas"/>
-        <Caret Line="60" Column="17" TopLine="45"/>
+        <Caret Line="45" Column="3" TopLine="45"/>
       </Position21>
     </JumpHistory>
     <RunParams>
