@@ -11,7 +11,7 @@
       </SearchPaths>
     </CompilerOptions>
     <Version Release="1" Build="6"/>
-    <Files Count="7">
+    <Files Count="10">
       <Item1>
         <Filename Value="selector.pas"/>
         <HasRegisterProc Value="True"/>
@@ -44,6 +44,19 @@
         <HasRegisterProc Value="True"/>
         <UnitName Value="TextBox"/>
       </Item7>
+      <Item8>
+        <Filename Value="ledbar.pas"/>
+        <HasRegisterProc Value="True"/>
+        <UnitName Value="LEDBar"/>
+      </Item8>
+      <Item9>
+        <Filename Value="rectcollection.inc"/>
+        <Type Value="Include"/>
+      </Item9>
+      <Item10>
+        <Filename Value="rectitem.inc"/>
+        <Type Value="Include"/>
+      </Item10>
     </Files>
     <CompatibilityMode Value="True"/>
     <RequiredPkgs Count="3">
