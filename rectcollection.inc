@@ -1,3 +1,5 @@
+//this is a part of LEDBar
+
 {%LEDBar}
 
 { TRectCollection }
