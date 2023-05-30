@@ -1,6 +1,6 @@
 { <This component can be used to output a text>
 
-  Copyright (C) <Version 1.0.0.2 01.01.2023> <Bernd Hübner>
+  Copyright (C) <Version 1.0.0.3 30.05.2023> <Bernd Hübner>
 
   This library is free software; you can redistribute it and/or modify it under the
   terms of the GNU Library General Public License as published by the Free Software
@@ -33,7 +33,7 @@ unit TextBox;
 interface
 
 uses
-  Classes, SysUtils, LResources, Forms, Controls, Graphics, Dialogs, LCLProc;
+  Classes, SysUtils, LResources, Forms, Controls, Graphics, Dialogs, LCLProc, ExtCtrls;
 
 type
 
@@ -43,15 +43,21 @@ type
   private
     FAutoSize: boolean;
     FBgrdColor: TColor;
+    FBlinkFreq: integer;
+    FBlinking: boolean;
+    FShowCaption : boolean;
     FCapLeft: integer;
     FCaption: TCaption;
     CaptionChange     : boolean;
     FCaptionWordbreak: boolean;
     FCapTop: integer;
     FTextStyle: TTextStyle;
-    procedure SetAutoSize(Value: Boolean);override;
+    FTimer  : TTimer;
+
     procedure SetAlignment(AValue: TAlignment);
     procedure SetBgrdColor(AValue: TColor);
+    procedure SetBlinkFreq(AValue: integer);
+    procedure SetBlinking(AValue: boolean);
     procedure SetCapLeft(AValue: integer);
     procedure SetCaption(AValue: TCaption);
     procedure SetCaptionWordbreak(AValue: boolean);
@@ -60,6 +66,9 @@ type
     procedure SetTextStyle(AValue: TTextStyle);
 
   protected
+    procedure SetAutoSize(Value: Boolean);override;
+    procedure StopBlinkTimer(Sender: TObject);
+    procedure BlinkTimer(Sender: TObject);
     function  GetTextWidth (AText : String ; AFont : TFont ) : Integer ;
     function  GetTextHeight (AText : String ; AFont : TFont ) : Integer ;
     procedure TriggerAutoSize;
@@ -98,6 +107,12 @@ type
    //The color of the background (clNone = transparent)
    //Die Farbe des Hintergrundes (clNone = Transparent)
    property BgrdColor : TColor read FBgrdColor write SetBgrdColor default clNone;
+   //Makes the text blink
+   //Lässt den Text blinken
+   property Blinking : boolean Read FBlinking write SetBlinking default false;
+   //Blink frequency
+   //Blink Frequenz
+   property BlinkFreq : integer read FBlinkFreq write SetBlinkFreq default 300;
 
    property Anchors;
    property BorderSpacing;
@@ -131,6 +146,15 @@ begin
   FTextStyle.Clipping  := true;
   FCapLeft        := 0;
   FCapTop         := 0;
+
+  FTimer := TTimer.Create(self);
+  FTimer.Enabled:= false;
+  FTimer.Interval:= 300;
+  FTimer.OnTimer:= @BlinkTimer;
+  FTimer.OnStopTimer:= @StopBlinkTimer;
+  FShowCaption    := true;
+  Blinking        := false;
+  BlinkFreq       := 300;
 end;
 
 destructor TTextBox.Destroy;
@@ -164,6 +188,24 @@ procedure TTextBox.SetBgrdColor(AValue: TColor);
 begin
   if FBgrdColor=AValue then Exit;
   FBgrdColor:=AValue;
+  Invalidate;
+end;
+
+procedure TTextBox.SetBlinkFreq(AValue: integer);
+begin
+  if FBlinkFreq=AValue then Exit;
+  FBlinkFreq:=AValue;
+  if (csDesigning in Componentstate) then exit;
+  FTimer.Interval:= aValue;
+  Invalidate;
+end;
+
+procedure TTextBox.SetBlinking(AValue: boolean);
+begin
+  if FBlinking=AValue then Exit;
+  FBlinking:=AValue;
+  if (csDesigning in Componentstate) then exit;
+  FTimer.Enabled:= aValue;
   Invalidate;
 end;
 
@@ -222,6 +264,17 @@ end;
 procedure TTextBox.SetTextStyle(AValue: TTextStyle);
 begin
  FTextStyle:=AValue;
+end;
+
+procedure TTextBox.StopBlinkTimer(Sender: TObject);
+begin
+ FShowCaption := true;
+end;
+
+procedure TTextBox.BlinkTimer(Sender: TObject);
+begin
+ if FShowCaption then FShowCaption := false else FShowCaption := true;
+ Invalidate;
 end;
 
 
@@ -284,8 +337,9 @@ begin
 
  TeRec:= rect(0,0,width,height);
 
- canvas.TextRect(TeRec,TeRec.Left+FCapLeft,TeRec.Top+FCapTop,
-                 FCaption,FTextStyle);
+ if FShowCaption then   //Blinking
+  canvas.TextRect(TeRec,TeRec.Left+FCapLeft,TeRec.Top+FCapTop,
+                  FCaption,FTextStyle);
 
 end;
 

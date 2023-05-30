@@ -1,0 +1,21 @@
+object Form1: TForm1
+  Left = 457
+  Height = 240
+  Top = 250
+  Width = 320
+  Caption = 'Form1'
+  ClientHeight = 240
+  ClientWidth = 320
+  Color = clWhite
+  object TextBox1: TTextBox
+    Left = 80
+    Height = 61
+    Top = 56
+    Width = 159
+    Caption = 'Warning'
+    Font.Color = clRed
+    Font.Height = 28
+    Font.Style = [fsBold]
+    Blinking = True
+  end
+end
