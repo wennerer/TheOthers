@@ -32,10 +32,8 @@ object Form1: TForm1
       OnPaint = Image1Paint
     end
     object Selector1: TSelector
-      Left = 20
-      Height = 35
-      Top = 20
-      Width = 35
+      Left = 64
+      Top = 29
       OnChange = Selector1Change
       CuttingColor = clForm
     end

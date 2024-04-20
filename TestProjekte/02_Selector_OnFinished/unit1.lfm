@@ -8,14 +8,14 @@ object Form1: TForm1
   ClientWidth = 320
   OnClose = FormClose
   OnCreate = FormCreate
+  LCLVersion = '2.2.6.0'
   object Selector1: TSelector
-    Left = 72
-    Top = 48
-    OnChange = Selector1Change
+    Left = 212
+    Height = 0
+    Top = 128
+    Width = 0
     OnFinished = Selector1Finished
-    CuttingOut = False
     CuttingColor = clForm
-    Transparent = True
     PrecastPopup = pmShow
   end
 end

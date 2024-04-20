@@ -32,8 +32,8 @@ type
     Button1  : TButton;
     Button2  : TButton;
     Memo1    : TMemo;
-    Selector1: TSelector;
     BildPNG  :TPortableNetworkGraphic;
+    Selector1: TSelector;
     procedure FormClose(Sender: TObject; var CloseAction: TCloseAction);
     procedure FormCreate(Sender: TObject);
     procedure PaintBoxMouseDown(Sender: TObject; Button: TMouseButton;

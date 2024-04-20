@@ -20,9 +20,9 @@ type
     RadioGroup3: TRadioGroup;
     SaveAs: TButton;
     Panel1: TPanel;
+    Selector1: TSelector;
     Start: TButton;
     Image1    : TImage;
-    Selector1: TSelector;
     procedure FormCreate(Sender: TObject);
     procedure Image1Paint(Sender: TObject);
     procedure RadioGroup1Click(Sender: TObject);

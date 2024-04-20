@@ -35,9 +35,10 @@ unit Selector;
 interface
 
 uses
-  Classes, SysUtils, LResources, Forms, Controls, Graphics, Dialogs, types, Menus, LMessages, LCLType, LCLIntf,
-  extctrls, SimpleGraphics, FPCanvas, clipbrd, StdCtrls, IntfGraphics, GraphType, LCLTranslator,selectorstrconsts,
-  CustomLine;
+  Classes, SysUtils, LResources, Forms, Controls, Graphics, Dialogs, types,
+  Menus, LMessages, LCLType, LCLIntf, extctrls, SimpleGraphics, FPCanvas,
+  clipbrd, StdCtrls, IntfGraphics, GraphType, LCLTranslator(*, LCLProc*),
+  selectorstrconsts, CustomLine;
 
 
 const
